@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg,rgb(7, 147, 228), white); /*fundo degrade*/        }
+            .tela-login{
+                background-color: rgba(0, 0, 0, 0.9);/*para transparencia o a significa alpha*/
+                position: absolute;/*para oucupara apenas o espaço de seus elementos*/
+                top: 50%;/*vai para baixo*/
+                left: 50%;/*vai para o lado*/
+                transform: translate(-50%,-50%);/*agr sim esta centralizada*/
+                padding: 80px;/*é a distancia dos elementos da borda*/
+                border-radius : 15px; ;/*para arredondar as bordas*/
+                color: white;
+            }
+            input{
+                padding: 15px;/*é a distancia dos elementos da borda*/
+                border: none;/*remover borda redonda do elemento*/
+                outline: none;/*remove a linha de fora*/
+                font-size: 15px;/*aumentar fonte*/
+            }
+            .button{
+                background-color: dodgerblue;/*cor de fundo do botão*/
+                border: none;/*remove borda arredondada*/
+                padding:15px;/*é a distancia dos elementos da borda*/
+                width: 100%;/*altura*/
+                border-radius: 10px;/*arredondar as bordas*/
+                color: white;/*cor da letra*/
+                font-size: 15px;/*tamanho da fonte*/
+            }
+            .button:hover{
+                background-color: deepskyblue;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="tela-login">
+        <h1>Login</h1> <!--ecrita-->
+        <input type="text" placeholder="Nome"> <!--inpute caixa de texto placeholder oque aparece dentro da caixa de texto-->
+        <br><br><!--quebra de linha-->
+        <input type="password" placeholder="Senha"><!--password senha e placeholder oque vai aparecer na caixa de texto-->
+        <br><br><!--espaçamento-->
+        <button class="button">Enviar</button><!--botão para envio de informações-->
+    </div>
+</body>
+</html>
